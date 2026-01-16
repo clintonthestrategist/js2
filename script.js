@@ -13,16 +13,20 @@ button.addEventListener('click', () => {
     const selectedOption = select.options[select.selectedIndex];
     const newColor = selectedOption.getAttribute('data-color');
     
-    if (newValue.trim() !== "") {
+    if (newValue.trim() === "") {
+        alert("Please enter your name");
+        return;
+    }
+    if (newSelect === "" || !newColor) {
+        alert("Please specify package");
+        return 
+    }
         mainSpan.textContent =  ` ${newValue}`;
         packageSpan.textContent = ` ${newSelect}`;
         mainParagraph.style.display = 'block';
-        input.value = "";
-    }
-    else {
-        alert("Please enter your name");
-    }
-    if (newSelect !== "" && newColor) {
+
         document.body.style.backgroundColor = newColor
-    }
+
+        input.value = "";
+        select.value = ""
 });
