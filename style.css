@@ -1,0 +1,17 @@
+body {
+    background: rgb(238, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+p {
+    display: none;
+}
