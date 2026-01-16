@@ -5,7 +5,6 @@ const mainSpan = document.getElementById('textone');
 const packageSpan = document.getElementById('texttwo');
 const mainParagraph = document.getElementById('paragraphlast');
 
-const 
 
 button.addEventListener('click', () => {
     const newValue = input.value;
