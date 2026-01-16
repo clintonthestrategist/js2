@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
     
     if (newValue.trim() !== "") {
         mainSpan.textContent =  ` ${newValue}`;
-        packageSpan.textContent = newSelect;
+        packageSpan.textContent = ` ${newSelect}`;
 
         mainParagraph.style.display = 'block';
 
